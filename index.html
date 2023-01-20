@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Estilos para dar formato al CSS-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/encriptador.css" />
+    <script src="js/encriptador.js" type="text/javascript" de></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <link rel="shortcut icon" href="img/Logo.ico" />
+
+    <!--Tutorial visto https://www.youtube.com/watch?v=VjPW4ZsuAEE&ab_channel=Codingraph-->
+
+    <title>encriptador</title>
+  </head>
+
+  <body>
+    <!--Logo de Alura-->
+
+    <header>
+      <img src="img/Logo.png" alt="AluraLatam" class="logo" />
+    </header>
+
+    <main>
+      <section>
+        <!--Area donde se introduce el texto a encriptar-->
+
+        <textarea
+          name="encriptar/desencriptar"
+          id="text_in"
+          class="area"
+          placeholder="Escribe tu mensaje"
+        ></textarea>
+
+        <div class="alerts">
+          <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon>
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <!--Botones de accion encriptar/desencriptar-->
+        <div class="btn">
+          <button
+            id="encriptar"
+            class="btn-encriptar"
+            onclick="f_encriptar(document.querySelector('textarea').value)"
+          >
+            Encriptar
+          </button>
+
+          <button
+            id="desencriptar"
+            class="btn-desencriptar"
+            onclick="f_desencriptar(document.querySelector('textarea').value)"
+          >
+            Desencriptar
+          </button>
+
+          <button id="limpiar" class="btn-limpiar" onclick="limpiar()">
+            Limpiar
+          </button>
+        </div>
+      </section>
+
+      <!--Rectangulo donde se mostrara el texto encriptado-->
+      <section class="rectangulo">
+        <textarea name="" class="text_out" id="text_out" readonly> </textarea>
+
+        <div id="info-text" class="info-text">
+          <img src="img/Muñeco.png" alt="Muñeco" class="munheco" />
+          <p class="p-noencontrado">Ningún mensaje fue encontrado</p>
+          <p class="p-encriptar">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+        <button
+          id="copiarAlPortapapeles"
+          class="btn-copiar"
+          onclick="copiarAlPortapapeles(document.querySelector('textarea').value)"
+        >
+          Copiar
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <p>Autor: Carlos Alfredo Zapata Lorenzo</p>
+        <p>Curso: AluraLatam by Oracle ONE</p>
+
+        <a href="https://github.com/EvilZeth" target="_blank"
+          ><iconify-icon
+            icon="icon-park:github"
+            width="30"
+            height="30"
+          ></iconify-icon
+        ></a>
+        <a href="https://www.linkedin.com/in/carloszapatalor" target="_blank"
+          ><iconify-icon
+            icon="openmoji:linkedin"
+            width="30"
+            height="30"
+          ></iconify-icon
+        ></a>
+        <a href="https://www.aluracursos.com/" target="_blank">
+          <iconify-icon icon="cib:oracle" width="30" height="30"></iconify-icon>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
