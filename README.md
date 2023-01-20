@@ -6,6 +6,7 @@ Encriptador de texto desarrollado con JavaScript, HTML y CSS para el challenge d
 
 El desafio consiste en construir una pagina web que encripte y desencripte texto que sera ingresado por el usuario y presentarlo en su forma encriptada o desencriptada, el objetivo de este desafio es poner a prueba los conocimientos adquiridos durante el curso "Principiante en programación"
 
+
 ---
 
 ## 🔑 Requisitos
@@ -45,6 +46,8 @@ Las llaves de encriptacion solicitadas son las siguientes:
 ### Errores:
 - Al actualizar el css responsive no actualizaba los cambios en GitHub Pages por lo que se obto por resubir el proyecto agregando un 1 al final del nombre del protecto
 
+### Visualizacion de la pagina
+- Puedes ver la pagina en el siguiente [enlace](https://evilzeth.github.io/Challenge1-ONE-Encriptador/).
 ---
 
 ### Autor:
